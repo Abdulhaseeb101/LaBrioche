@@ -439,6 +439,12 @@ footer em {
   font-style: normal;
 }
 
+@media (max-width: 360px) {
+  .first-content h1 {
+    font-size: 50px 
+  }
+}
+
 @media (max-width: 767px){
   
   .baner-content {
