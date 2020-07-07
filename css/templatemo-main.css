@@ -143,19 +143,19 @@ a:hover { color: #FF0; }
 }
 
 
-.baner-content {
+.banner-content {
   padding-top: 20vh;
   text-align: center;
   background-image: url(../Assets/modalBg.jpg);
 }
 
-.baner-content img{
+.banner-content img{
     border-radius: 50%; 
     width: 30%;
     height: auto;
 }
 
-.baner-content h1 {
+.banner-content h1 {
   margin-top: 0px;
   font-size: 50px;
   color: #e4572e;
@@ -164,7 +164,7 @@ a:hover { color: #FF0; }
   border-bottom-color: black;
 }
 
-.baner-content span {
+.banner-content span {
   display: inline-block;
   margin-top: -20px;
   font-weight: 500; 
@@ -177,7 +177,7 @@ a:hover { color: #FF0; }
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
-  background-image: url(../img/2nd-section.jpg);
+  background-image: url(../Assets/section-2Bg.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -236,7 +236,8 @@ h4, .h4 {
 
 .projects-content {
   padding-top: 20vh;
-  background-image: url(../img/3rd-section.jpg);
+  background-image: url(../Assets/section-3Bg.jpg);
+  background-position: center center
 }
 
 .projects-content .item a {
@@ -294,7 +295,7 @@ h4, .h4 {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 8vh;
-  background-image: url(../img/4th-section.jpg);
+  background-image: url(../Assets/section-4Bg.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -363,7 +364,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 16vh;
-  background-image: url(../img/5th-section.jpg);
+  background-image: url(../Assets/section-5Bg.jpg);
 }
 
 .contact-form {
@@ -380,10 +381,24 @@ section {
   font-size: 18px;
   line-height: 1.2;
 }
-.contact-form span {
+
+.contact-form .inline-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ff7d27;
+  color: #282b2f;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.contact-form .inline-head {
   color: #e4572e;
   font-weight: 600;
 }
+
 footer {
   text-align: center;
   background-color: #282b2f;
@@ -439,31 +454,28 @@ footer em {
   font-style: normal;
 }
 
-@media (max-width: 360px) {
-  .first-content h1 {
-    font-size: 50px 
+@media screen and (max-width: 360px){
+  .banner-content h1 {
+    font-size: 50px;
+  }
+
+  .banner-content span {
+    font-size: 40px;
+  }
+
+  .contact-form li {
+    font-size: 12px;
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) and (min-width: 360px){
   
-  .baner-content {
+  .banner-content {
     padding-top: 30vh;
   }
 
-  .baner-content h1 {
-    font-size: 64px;
-  }
-
-  .baner-content em {
-  }
-
-  .baner-content span {
+  .banner-content span {
     font-size: 24px;
-  }
-
-  .baner-content .primary-button {
-    margin-top: 15px;
   }
 
   .service-content {
